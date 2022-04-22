@@ -75,7 +75,7 @@ void Output::CreateDesignToolBar()
 	//Adding icons for each statement needed (Ali).
 	//pWind->DrawImage("images\\DesignMenu.jpg", 0, 0);
 
-	pWind->DrawImage("images\\lolo.jpg", first, 0);
+	pWind->DrawImage("images\\Variable=#.jpg", first, 0);
 	pWind->DrawImage("images\\Variable.jpg", second, 0);
 	pWind->DrawImage("images\\Variable =.jpg", third, 0);
 	pWind->DrawImage("images\\Condition.jpg", fourth, 0);
