@@ -89,9 +89,11 @@ void Output::CreateDesignToolBar()
 	pWind->DrawImage("images\\Exit.jpg", twelvth, 0);
 	pWind->DrawImage("images\\Move.jpg", thirteenth, 0);
 	pWind->DrawImage("images\\select.jpg", fourteenth, 0);
-	//pWind->DrawImage("images\\Edit Statement.jpg", fifteenth, 0);
-	
-	pWind->DrawImage("images\\Simulate.jpg", seventeenth, 0);
+	pWind->DrawImage("images\\Simulation.jpg", fifteenth, 0);
+	pWind->DrawImage("images\\Edit.jpg",sixteenth, 0);
+	pWind->DrawImage("images\\Undo.jpg", seventeenth, 0);
+	pWind->DrawImage("images\\Redo.jpg", eighteenth, 0);
+
 
 	//Draw a line under the toolbar
 	pWind->DrawLine(0, UI.TlBrWdth, UI.width, UI.TlBrWdth);
@@ -107,6 +109,23 @@ void Output::CreateSimulationToolBar()
 {
 	UI.AppMode = SIMULATION;	//Simulation Mode
 	///TODO: add code to create the simulation tool bar
+	pWind->DrawImage("images\\Validation.jpg", first, 60);
+	pWind->DrawImage("images\\Debug.jpg", second, 60);
+	pWind->DrawImage("images\\Switch Back.jpg", third, 60);
+	pWind->DrawImage("images\\Generate a File.jpg", fourth, 60);
+	pWind->DrawImage("images\\Simulate.jpg",fifth, 60);
+	
+	
+
+	
+	int i = 0;
+
+	pWind->DrawLine(0, UI.TlBrWdth, UI.width, UI.TlBrWdth);
+
+	for (int i = 400; i < 1440; i = i + 80)
+	{
+		pWind->DrawLine(i, 0, i, UI.TlBrWdth);
+	}
 }
 //////////////////////////////////////////////////////////////////////////////////////////
 
